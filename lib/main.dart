@@ -1,21 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:device_preview/device_preview.dart';
 
 import 'LayoutsandWigtes.dart';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:device_preview/device_preview.dart';
 
 void main() {
   runApp(
     DevicePreview(
-      enabled: true, // Set to false to disable in release mode
-      builder: (context) => ScreenUtilInit(
-        designSize: Size(375, 812), // Set your base design size
-        minTextAdapt: true,
-        builder: (context, child) => MyApp(),
-      ),
+      enabled: true,
+      builder: (context) => MyApp(),
     ),
   );
 }
@@ -32,7 +24,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class MyScreen extends StatelessWidget {
   const MyScreen({super.key});
 
@@ -43,9 +34,18 @@ class MyScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder:(context)=>Layoutsandwigtes() ));
-            }, child: Text('BSNL Screen',style: TextStyle(fontSize: 20),),),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Layoutsandwigtes()),
+                );
+              },
+              child: Text(
+                'BSNL Screen',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
           ],
         ),
       ),
