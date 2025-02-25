@@ -106,54 +106,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Container(
+      body:
+      Container(
           decoration: BoxDecoration(
             image: DecorationImage(image: NetworkImage("https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180"),
             fit: BoxFit.cover)
           ),
         ),
-          Positioned(
-              bottom: 5,
-              right: 5,
-              child:Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Icon(Icons.thumb_up_alt_outlined, color: Colors.black, size: 30),
-                  Text("1.4M",style: TextStyle(color: Colors.black,fontSize: 12),),
-                  SizedBox(height: 10,),
-                  Icon(Icons.thumb_down_alt_outlined, color: Colors.black, size: 30),
-                  Text("Dislike",style: TextStyle(color: Colors.black,fontSize: 12),),
-                  SizedBox(height: 10,),
-                  Icon(Icons.message_outlined, color: Colors.black, size: 30),
-                  Text("4,095",style: TextStyle(color: Colors.black,fontSize: 12),),
-                  SizedBox(height: 10,),
-                  Transform.rotate(
-                    angle: 3.14, // Rotate 180 degrees to face right
-                    child: Icon(Icons.reply, color: Colors.black, size: 30),
-                  ),
-                  Text("Share",style: TextStyle(color: Colors.black,fontSize: 12),),
-                  SizedBox(height: 10,),
-                  Icon(Icons.repeat_outlined, color: Colors.black, size: 30),
-                  Text("19k",style: TextStyle(color: Colors.black,fontSize: 12),),
-                  SizedBox(height: 10,),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(image: NetworkImage("https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180"),
-                            fit: BoxFit.cover)
-                    ),
-                  ),
 
-                ],
-              )
-
-          )
-       ]
-      ),
     );
   }
 }
@@ -178,9 +138,11 @@ class AddPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: InteractionPanel(
-        imageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
-        profileImageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(image: NetworkImage("https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180"),
+                fit: BoxFit.cover)
+        ),
       ),
     );
   }
@@ -191,9 +153,11 @@ class SubscriptionsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: InteractionPanel(
-        imageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
-        profileImageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(image: NetworkImage("https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180"),
+                fit: BoxFit.cover)
+        ),
       ),
     );
   }
@@ -205,9 +169,11 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body:InteractionPanel(
-        imageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
-        profileImageUrl: "https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180",
+      body:Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(image: NetworkImage("https://tse3.mm.bing.net/th?id=OIP.Hwg82k_7EosONC8kU1BLZQHaHa&pid=Api&P=0&h=180"),
+                fit: BoxFit.cover)
+        ),
       ),
     );
   }
