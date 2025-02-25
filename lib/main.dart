@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:tasksweek/Bottombar.dart';
 
 import 'LayoutsandWigtes.dart';
 
@@ -43,6 +44,18 @@ class MyScreen extends StatelessWidget {
               },
               child: Text(
                 'BSNL Screen',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BottomBar()),
+                );
+              },
+              child: Text(
+                'Bottom_bar',
                 style: TextStyle(fontSize: 20),
               ),
             ),
