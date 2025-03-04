@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "47307296958",
+    "project_id": "dr-fb-2b2e2",
+    "storage_bucket": "dr-fb-2b2e2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47307296958:android:1f976b75ab1336e62d0eef",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwdMhfdJB-SfN5VFci8E9tJXgJ-fnaQBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47307296958:android:3f8b774c9db1707c2d0eef",
+        "android_client_info": {
+          "package_name": "com.example.tasksweek"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwdMhfdJB-SfN5VFci8E9tJXgJ-fnaQBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
