@@ -4,8 +4,16 @@ import 'package:tasksweek/Bottombar.dart';
 
 import 'Grid_VIew.dart';
 import 'LayoutsandWigtes.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'UserLogin.dart';
+import 'firebase_options.dart';
 
-void main() {
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     DevicePreview(
       enabled: true,
@@ -21,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyScreen(),
+      home: Login(),
     );
   }
 }
